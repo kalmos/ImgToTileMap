@@ -1,0 +1,15 @@
+#-----------------------------------------------------------------------------
+#
+#
+#
+#-----------------------------------------------------------------------------
+
+set(CMAKE_CONFIGURATION_TYPES "Debug;Release;MinSizeRel;RelWithDebInfo" CACHE STRING "Lnx f" FORCE)
+
+set(CMAKE_CXX_FLAGS_DEBUG	"${CMAKE_CXX_FLAGS}	-DDEBUG -g -O0 -DDVERBOSELVL=3 ${CMAKE_CXX_FLAGS_DEBUG}"	CACHE STRING "Lnx Cpp f d" FORCE)
+
+set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS}	-s -O4 -fomit-frame-pointer -DDVERBOSELVL=2 ${CMAKE_CXX_FLAGS_RELEASE}" CACHE STRING "Lnx Cpp f r" FORCE)
+
+set(CMAKE_CXX_FLAGS_RELWITHDEBINFO	"${CMAKE_CXX_FLAGS} -s -g -O0 -fomit-frame-pointer -DDVERBOSELVL=2 ${CMAKE_CXX_FLAGS_RELWITHDEBINFO}"	CACHE STRING "Lnx Cpp f rd" FORCE)
+
+set(CMAKE_CXX_FLAGS_MINSIZEREL	"${CMAKE_CXX_FLAGS} -s -Os -fomit-frame-pointer -DDVERBOSELVL=2 ${CMAKE_CXX_FLAGS_MINSIZEREL}"	CACHE STRING "Lnx Cpp f mr" FORCE)
